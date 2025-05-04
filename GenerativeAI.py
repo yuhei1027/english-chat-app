@@ -75,6 +75,7 @@ class GenerativeAI:
                 )
         print('-----STT-----')
         print(transcription)
+        print(transcription.get("usage", {}))
         return transcription.text
 
 
